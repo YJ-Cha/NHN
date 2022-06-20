@@ -62,7 +62,6 @@ $('section .btnDown').on('click',function(){
 })
 
 
-
 /*
 for(초기값 ; 조건식 ; 증감식){ 실행구 }
 

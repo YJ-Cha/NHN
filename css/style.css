@@ -296,21 +296,23 @@ footer .footer_inner {
 .sub_co_list > li.active > a::after {
     background-position: -227px -27px;
 }
-
-.sub_co_list > li > a.active .dropBox_wrap {}
-
 .dropBox_wrap {
     position: absolute;
     left: 0;
-    bottom: 26px;
+    bottom: 0px;
+    padding-bottom: 26px;
+    display: none;
 } 
+.sub_co_list > li.active .dropBox_wrap {
+    display: block;
+}
 .dropBox {
     border: 1px solid #999;
     width: 140px;
     padding: 15px;
     background-color: #fff;
-    display: none;
 } 
+
 .dropBox ul {
     height: 200px;
     overflow-y: auto;
@@ -361,8 +363,8 @@ footer > div {}
     }
 
     footer .footer_inner {
-        min-width: 930px;
-        padding: 0 30px;
+        min-width: 890px;
+        padding: 0 70px 0 30px;
     }
 
     .footer_notice {
